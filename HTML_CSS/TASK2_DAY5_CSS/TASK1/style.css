@@ -1,0 +1,321 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#020917;
+  color:white;
+  font-family:'Poppins', sans-serif;
+}
+
+.main{
+  width:100%;
+  min-height:100vh;
+  padding:30px 45px;
+}
+
+/* =========================
+   TOP
+========================= */
+
+.top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom:30px;
+}
+
+.left-heading p{
+  color:#7da4d8;
+  font-size:14px;
+  letter-spacing:2px;
+  margin-bottom:10px;
+}
+
+.left-heading h1{
+  font-family:'Oswald', sans-serif;
+  font-size:95px;
+  line-height:0.9;
+}
+
+.center-links div,
+.right-links div{
+  margin-bottom:10px;
+  color:#cfd7e2;
+  font-size:14px;
+}
+
+.filter-btn{
+  background:transparent;
+  color:white;
+
+  border:1px solid rgba(255,255,255,0.2);
+
+  padding:14px 24px;
+
+  border-radius:18px;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  cursor:pointer;
+}
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+}
+
+/* BIG CARD */
+
+.big-card{
+  position:relative;
+
+  width:530px;
+  height:420px;
+
+  border-radius:28px;
+  overflow:hidden;
+
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+.big-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+
+  background:linear-gradient(to right,
+  rgba(0,0,0,0.3),
+  rgba(0,0,0,0.05));
+}
+
+.big-content{
+  position:absolute;
+  top:90px;
+  right:40px;
+}
+
+.big-content h2{
+  font-size:55px;
+  font-family:'Oswald', sans-serif;
+  margin-bottom:30px;
+}
+
+.cart-circle{
+  width:60px;
+  height:60px;
+
+  border-radius:50%;
+  border:2px solid rgba(255,255,255,0.5);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:28px;
+
+  margin-bottom:20px;
+}
+
+.price-box p{
+  color:#7da4d8;
+  font-size:13px;
+  top: 23px;
+  right: 30px;
+}
+
+.price-box h3{
+  font-size:36px;
+}
+
+/* =========================
+   SMALL CARDS
+========================= */
+
+.card{
+  width:220px;
+  background:#09111f;
+
+  border-radius:24px;
+  overflow:hidden;
+
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.card img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+}
+
+.card-info{
+  padding:16px;
+}
+
+.card-info h3{
+  font-size:16px;
+  margin-bottom:5px;
+}
+
+.card-info p{
+  color:#8a96a8;
+  font-size:12px;
+  margin-bottom:12px;
+}
+
+.colors{
+  display:flex;
+  gap:10px;
+  margin-bottom:12px;
+}
+
+.color-item{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+.color-item small{
+  color:#c8d2df;
+  font-size:11px;
+  letter-spacing:1px;
+}
+
+.white-color{
+  background:#fff;
+}
+
+.gray-color{
+  background:#8d97a5;
+}
+
+.black-color{
+  background:#180303;
+}
+
+.navy-color{
+  background:#1f3b73;
+}
+
+.blue-color{
+  background:#395e96;
+}
+
+.silver-color{
+  background:#cfd5df;
+}
+
+.charcoal-color{
+  background:#3a3a3a;
+}
+
+.ice-color{
+  background:#b8d9ff;
+}
+
+
+.colors span{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  /* background:white; */
+}
+
+.card-info h4{
+  font-size:18px;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.features{
+  margin-top:35px;
+
+  display:flex;
+  justify-content:space-between;
+
+  padding:25px;
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  border-radius:24px;
+
+  background:#06101d;
+}
+
+.feature{
+  display:flex;
+  align-items:flex-start;
+  gap:16px;
+}
+
+.feature i{
+  font-size:32px;
+  color:#9fc3ff;
+}
+
+.feature h3{
+  font-size:14px;
+  margin-bottom:5px;
+}
+
+.feature p{
+  font-size:12px;
+  color:#9aa7b8;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  margin-top:20px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:24px;
+  background:#06101d;
+  padding:22px 10px;
+}
+
+.h2{
+    font-size: 20px;
+}
+.footer-left{
+  font-size:13px;
+  color:#8fa0b4;
+}
+
+.footer-center{
+  display:flex;
+  gap:40px;
+}
+
+.footer-center a{
+  text-decoration:none;
+  color:white;
+  font-size:14px;
+}
+
+.footer-right{
+  display:flex;
+  gap:20px;
+  font-size:22px;
+}

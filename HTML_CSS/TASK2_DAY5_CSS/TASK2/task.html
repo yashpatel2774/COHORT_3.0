@@ -1,0 +1,283 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASTRO UI</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+
+      <!-- NAVBAR -->
+
+      <nav class="navbar">
+
+        <div class="logo">
+          ASTRO<span>.</span>
+        </div>
+
+        <ul class="nav-links">
+          <li>PRODUCTS</li>
+          <li>CATEGORY</li>
+          <li>ABOUT US</li>
+          <li>CONTACT</li>
+        </ul>
+
+        <div class="icons">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-regular fa-user"></i>
+        </div>
+
+      </nav>
+
+      <!-- HERO SECTION -->
+
+      <section class="hero">
+
+        <!-- LEFT -->
+
+        <div class="left">
+
+          <span class="new">NEW</span>
+
+          <h1>
+            ASTRO <br />
+            WINTER <br />
+            ARMOR <span>II</span>
+          </h1>
+
+          <h2>$560</h2>
+
+          <div class="line"></div>
+
+          <h3>DESCRIPTION</h3>
+
+          <p>
+            A next-gen cold weather jacket. The essence of retro style and the
+            resilience you need for extreme winter conditions.
+          </p>
+
+          <a href="#">READ MORE</a>
+
+          <div class="dropdown">
+            <span>MATERIAL & CARE</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+
+          <div class="dropdown">
+            <span>SHIPPING & RETURNS</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+
+        </div>
+
+        <!-- CENTER -->
+
+        <div class="center">
+
+          <img
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTEhMWFhUXGBoaGBcYGBgYGBgXGh8aHR0YFxoaHSggHR4lHRgXIjEhJSkrLi4uGh8zODMtNygtLisBCgoKDg0OGxAQGi0dHSUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSstLTc3LS0tLf/AABEIAN4A4wMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAABgQFBwMCAQj/xABDEAABAwIDBQUGAwcCBAcAAAABAAIRAyEEBTEGEkFRYRMicYGRMqGxwdHwB0JSFCNicoLh8UOSFTNTwhYXJJOistL/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EACERAQEAAgIDAAIDAAAAAAAAAAABAhEhMQMSQRMyIlFh/9oADAMBAAIRAxEAPwDcUIQgEIQgEIQgEIQgEIQgiZlmVGg3fr1WU2zEvIaCdYE6mxslJ34p5eHuaTU3QJa8M7r+cCZt1AVb+NbA6lQYT+Z7vQNE+8rEMZRqMIgcfIqjfP8AzWwM23o5wfoplL8TMuP+qRH8JX5yrVNLRzXwOB0PiOqaH6Od+JuWDWq//wBqp/8Alc3fillv/Uef6D81+dq9UCwd7/iuW91TQ/QdX8XcvDiA2uYsXBjY9759yYsi2uwuLbvUXyNDIgg8iNQvy/gmS03ub66K52MzF1DF0yCYc4McJsQ61/AkFB+pAV9VDs9mW93D5K+UAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhealQNBc4gACSSYAHMlZltl+KjaRNLBBr3cajgd0fyNtveJt4oPv4ytg4dw5VB0PsLLcVS3gvOcbUYrE1Q/E1S4aBujWdWN0GgniV03rKikx+Gc0E6hcMvHeuN6WkwOYi3vVviKliFVbu7UJFu4dEF3n2FpNruY5kQGNOnt7rSTIPGR9mEvspRI5Ej0Vhh2jdc11xYeUAADyj0Cig6gcPcOZKDz2YXvCYgU6jHnRrmnyBBXl3XXly8VGcJPgg23Zbaii54LHgxqLg+hutSwWNZVbvMM9OIX5GpuIIIJBGn9k5bObeVqBAqEub+oGHD6qaH6PQkzZzbenXaO8HDiRZw8Qm+hXa8S0yEHRCEIBCEIBCEIBCEIBCEIBCEIBCEIBV2d51QwtM1K7w0cB+Zx5NHFUe3O2rMCGsa3frP9kH2Wjm76D3LC9oc7rYl5qVnlxd6AcgNAOiC/222/rYxxY3uURowHXkX8z00HvSRWqyZIn3QvDnXQIVHhz2Gx3h43Ck4PGwNwkH9J+RXArw6kCgsH1QR92UCue8fCFzp0niYOlyOnRHmUFpiMS6o97wGgu3dAYENDbTxgBcKlMNb3dOPU8+q44fe3Tu6zouNd73Wm3IIPlR3nzPJeg+mNAfNeadAR7UL52aD6XzoiUbqFRKwOOfScHMcWkcQVpmyP4kbpDa9v423B/mb9FlIXfCsc5wa3U/cqD9YZXmLK7A9jg4EagyD4KYsg/DjOhRd2Mw06A/q/v9FrlKoHAELMux7QhCoEIQgEIQgEIQgEIQgFHx+KFKm550aPU8B6qQlra3Fg7tEfzO+Q+fos5XU2sm6z7aLKK+MD6ur2nfb15sHy8FnGJomw0iQRxB6r9D4FobTBju6EDh1WRbY4Ais6qwb1M+0R+V0xJ6aLHjy121lCFC9bilYmgGlR94Luw87qIX3eXyUHug7vgfqaR8wo8WRVcRB4gypTmAgkad0jzuVBHoU59YXR9ONV7bT7pI5rvUO81h47wB+/JBFZRmLKyds7iwSP2erIAJG44kAkgEwOJB9E1bP5fgMQ1lM03msA41buaC0auYd4AOuBBtZ3EhO+Xk7/AGZDmgOBc0ubYXMlu93f3rnAETvbo1AlNjD8ThnscWva5jhq1wLXDxBuuBC3j8Wsop1cH25A7Sk5sPiHOpvtuu8CQfLqsRrUDEi4QRC1MOy9MU6VWu689wDxj5x6KgY+xYfFv0TBk9Jx7KgbB1VnoSJ+BWc7wsXeYYU0agIJ0BB0M/UFa1sNnor0hJ7ws4defn9Uj5xgA9zi3QCfPl0ULI8Y/B1g6+6YDx05jqPvVc8brtq8twQo2X4oVGBzTIIFxxHNSV1YCEIQCEIQCEIQCEIQcsVXbTY57tGgk+SzjEZgalRz3auv9B5fJMe2maU2gUO0aHOhxbIBImwPifglLBMNR/ZgQTpy8Fx8l+N4z6nNz5/Zmm1sSYnjfklHDVP2fGNbUJNN7oeDcHe/NHEHl4pup4AUy4uB3gYHLqfRLe1DbMqESaT2OI/gDgT8Cuc7bJu1+UVKGIqM3Tutcd21t3UeNiqFuDqT/wAt9x+l1+ostZ/EXDufUDiNRMjiIgeCV6W8ezZpEi08ZXWeVj0KNHAVXezTe6P0tcfWAvrsFUaYcxwPItcD7wte2fyw0qTm1Gw7eBnjCodoGB1UyACOPHgrfJYkx2zqrhnG0GfDirHJMpxFWm406FRwaLkNMACTJMQr3G4YXkCeca8ir7YDMRTdVouMB9J4HiL/AA3knk2tx0T6eSVyCWU3ObvOvbhqo+Ey6vIZ2biQZj78Voex9ftKDwfaFVwjyBVhUwTS9paBvBpBIHNS+Wy6JjtndLLcYx0spPDv4TwkH4geimMzXMg6P35cIFxvG1xcgm0TP1WjUMi7trOmQ4agq52fyRrXuqOAJePRWeS34lxkY/mmbZpUpmnX7csMS1zYBi44TqEvYUPIIFN7oMmGkx4xpxW67W5KHML2ktdEa26SlLI6Jp1xfdcT7Q66zzHRT8urpfXcZnicqqlhqClU3B7Ttx0DxMQE15i8NoYSofbDmaW0bPxA9Uy7TPNVrqYaN4Gd4R3o6rOszxjobTd/pk26/YT39j100zLMzFYCTfV0LhmgD3d0ie8XSPOB6LOsHnlSmBAaTzvpy1Tls/nNGpBqRTcIvcgq7TTQNhqz6bezqHqB+kH8o5wfindZlg6hZVZUbBa8xbS+h9QFoeX195g6LePSVKQhCqBCEIBCEIBCFDzbMqWHpmrWdusBAmCbkwLC5QYh+INOtVzKo1zCHOc0MB4s0aR0IE+qutlsPUwz91zi4NI1vE8ibi91Z4qvRxmZdtScHso0GtDhpvuLjbwDiPJWVTJZl514Lj5bzp0wj7tBmTAYJg6jhP3yVVlGFNevL2zSa3ed4G26fEz6Fds42fqYtjADu7kyfS3uVxsRgRQpvoudvudck2tYNb4C58ysSbq70qtqqfaE9beqTsVl27cSCDqDoU+Zy3dIm8FUeOw4M8zKQXuz2IGIoDe9tvdJ5kaHzHzVFtRll+0Agt9ocwpmyNbsxUJ0kDzCtc4otq0i5p1afOy12z0zHFXhRKj+yO+OGi7YpkGDzUPEeyRqPv6KSNbXf4bY8ObVaeDh6nf4eAWh4akHQI429+qyv8LXhr8TOsNI9X/VbDkjQ6D0/wApl+xOk91HdaDyv5r3Sf5f3UypTkXXKlWZdhK3Iwrc8eOzIN+nNKApzDhY8PEcEw57Qh/GD7lUGlDSOshc7N1udOORljqxZVb3j7JNxOsLN/xGyZ9HFkx3agDgeZAAPyPmnbF1XNfvcWkH3yFJ28wvaURMGHSOYEXWseErHadGDPuTHl9E6lV1bD7ro+SvxhnNa18QCFciL/IsSey3Z9lxgeN/r6FaPs9jNORCy7Z5zS5zD+cCPET9U2bN5iC409HMvB1ifl81vCs5RpCFyw1XeaCuq2yEIQgEIQgFnH4sVzUNLDMewEd9zXPDSZs2Jt+r1WjrOtpq9V9Sq2ph6Ndkww6Ppi4mHa25EeSlsiyOP4fZLUp0nB7Yc586g2AAFwSOaeX0gBfTiqPYWl2eFpsLYcGiRb2jc+8pkqNGpXGc3bV4R8MWtB5RP1SthnkvdUNt5xIE6DgFe5k9opw0+0d23W7vcCqdzRBIIj32+yplvfCxGzMzqqztJEHUceY6qbmNQ7sngL+KpK+K3WtqDTiOhWNtO9Vj2hxFg4acyOKlZJmUsFMn7CnYFzK1FhFy2QfL+ypcdgwx5IMAQQumvsZ/xT7Q4TvuI43Cp8sAFUB4ln5uiuMVWL9dZVVVYW1C9lwbOb42U2unbYeiGY3FM4A28JdHxC1LZvFtLywcFk2yFScbiBp3Rx0iNeNp4LT9maUvDpENB0ET7ypl+xOjLmeJ3KZSnRzMl9xEmUwZ8Jou9fTklCo0tvPh58fRXK2VMZF7jcw7Votf5KppOm3E6eK+4d4ktJ0G95cT4aKBQxEtc/gCY6rNvLUj5j6YJG97MiecKJiMWS99JzpaWndnrwV1ldNtfeOsCYVLneWua4VBpEFa+bQpUMJ2lZreRv5J5x9JjqQabQLJUwuLFOq4x3ova/iu+PzO13arXxlwa4MLYOh1V1s01z8S6sNBId4cvh6JfwJa4w7UXbOk9VMbiewcH07EcjqOII48VmcLWz5FWlpb5q1Sts/iQXNI0cPiLJpXocwhCEAhCEHOu/da48gT6JLrta+zhcg3TbmzopO8I9Sk+se8CdF5/NedOmC5yLAFjGkWkadOCoNsM+fSe2kTumLu4CZ16QnPAvloPRK+0+DZVe4VGggtt/ZTqH1ArYh7MFSc98Go5zg4X/l9wle8jc2pE30MCdeZnTVG0TqbqFPDUyN1jBHkPoqnI8c+id1xlh46EEJLyvw2ZrlrOyMi9z4JUzjLgzDnoJjmdfn6JtrYpj6L3sdvFoMiTwHEKnNCpUZpeeJ0toOauUnaY1G2MwfdqU7yBvQebrEeFvevmfYSpBAA68wJ19y7bOUqja8uNvZjib6k8p4BMWY4eQ6VrHmJe2T4ujVDo3RY/wCPJe8JUjeG5e2vGOR4FXua04qARc/HgfvkuD6cWABcdOh5rGmypsyGszDECnJG4Y5wdwxrqJI8k9ZRiHsqiG2JJuTxvwskTZ9u5mbxc9z3w35rRqZ0MSpn2Y9G57t6nO7PRIjK7XPcyN3dJcLxLdY8Z+SdsPXb2W9MCLpFx1Zoex5FpIniL6+BC1fjMM1LLA+nvB0do2ZgTBFh0AlLbMqcabhvFoDnCNDAJtPvTTlVbdpBhI7pgHTuflPl8lX18fRcW06bg4kkW56mTCZY/TGqfZbepV90ggPa5uswdQfcUw5lgi5stG+JB1g+iraTCyqwkAd9vW03+KZ67IBjimPRkyzPKjG1ySzdIbN41BIMRI481U1aLKrS5uoVzt3hiBvaG/mkkYpwsCQtz+kMWCAbBOv1XfG054eHmq3DVCQCdVZYVxI3T4j6LKnjZbFfuqJnQAf7bfJaK0yJWZ5LQ7Nu5wDreBg/VaLgHzTaei7TpzSEIQqBCEIKraN0Uh/MPSCliVY7ZY0sfTBHdgzHOQl85iwcfDmvL5ecnbDo55XWG7KoM+cTV6aeqjYbaOnSDpDj5cVD/wCIdr33anQcuSb/AIprl6pYc7pNoA87/Z9VVV32APE/NOeKwDeyBZq5g9QEnYxly0cJRURuPdTeC3iQ0jg5pIEEJ/pHcYTyaXHrbRZxgqG/iKVMnV4meAufknvafFtoYUVD7Jcxp/ke9oP/AMZWsEycGzTqgE3EQeel1fZg+PMR6hVe0NNrd1/Dj8VKp7zqTHP13U62nZVzcES6L/eihZad9wnWP8qwzV9yNY+aqMI4iqWixiyzGi1TqgZmXD2S2Ph9Anh2I4eZSK2nOZlrRYNsP6Zj4+icavitZxMaHZlUINOYaf7r3jKEtDSeAHlGql4fKnQx5EgnX5lGKaTI0IWVUtbF1Oy7ImWj5X18OHVecI4sYypoG1W7x/hkAn0RjKQc3dmCJVhiMtnBkgyHsn1HxVlSrnMaYDwbku4acUx0qfdaTckBLdOsX0KFSPaY0z1IE++UxUKoNFpHC3mEnFS9Efb6kBRcTzHmZ+krL6NEytA/ErEyWsnmT48PmkLA1w7wPHktY8lXWX0Duidfl9lSBIIKnYGhvU4aDM/FRsVg3fq8N36+SWEpvySsXU2k6xH+0kfCFoGSPmk3pZZfsjiQabqfFriesHj7o8lpOzbv3Z8V1x6Yva2QhC0gQhCBa2ywfaNaRZw0+hSO9o00+RT/ALRVLx/ClTE4YOgnjErz5911x6VWIyGo8BzR3N46a/dl0q4OoxwptkAkNkwfvVPmUUxuBo0VRmbAKgtqf7LNnCyrT9pb2e60gmAPAJRq5e59UtYON1fU8A8iwAE3jWOit8qwW62SLnnzVnKXhmhwr6WMDnW3WPcBfwCes6yqniadOhVBLY3i0EtndAESL6uHoqbaZoGILQL91snlqR99F6zbP+zxDKTWlx7Amf07zvoxWcVLysM73ezYI7oiBxnRSa9YtogutDAT4wlWg3EYlwDmubTbyIk+9S9ose9rd3dJ4AAjha91LfqyfFJjMRLnOPJfcnph7y935WmOp/wqTFYiq4Ru8byR6a+KnZFVcKgBa4ibi0TwBusRqqmN3OWTYlsmP5H6egTfXpCQdASEs59SczN8OTq5pdwkD95AMaJlNbfdZh3W6W1PExqumbOJwy4gsDOEeios9AD7cfKVxwObPadwMPUwfoumJYa7msaCCTxBiOfvU3uGtKYsEF3NW2QVQ/CPZqWOcB0BuPip2bbPBlAind0R/hL2QVHB7mi0tuI5Wn75KS6p3FtkJLsG5g/0nuEHlO+BPg6PJXmWH/07eZJJ8UoZTjexFdlQ2fERzbANuoePRMGX4xpoB0EATbjKtvJIRtv6bTVB6Qf5ufokjABrHw82nUcDzTxnbHVXk7pAE3M6nRI+JZu1IOtp+CuFMo1DIsIx9LfpVA4jUXHnBXzFUWkHdEGSHcLnolrKMY6iWvZYgjzHEFOj6jMRTL6fO44g2K3LtmzRd2abu4lzf4SPfK1TZk9x3isuwbXNxjN4RvA//U/2Wn7MmzvJbx6Zq7QhC0gQhCBezz2z0+iqGtkXU7PcZ3tOOvBVIrgOuYXlyvNdp0sMDjXA7oFvkvmPYahZu6z6dVIy5g3b6c1NwzW6cYA66qyJakumBDbx5ArhisQ6mwkXjTqYUrGYljGEkhKNfPS6putLSN4cZjmbdF0mmFJnWL/f2/Jck8T1/wBx9F5yfDOrdriH+0XbjeQYyP8AuLlxx1J9So490Me50ODgeJ1Go1V7ktAtohkWBfJtclxPoZXOtxabL4iQaRiRoeY4rntLlQcwkarnldDdrB2m7JPgriq5tYQDZanM5S8Vl4pzJ0vf3SvL2TeYPSLgc1Jz2maVd8aE2HMHkqbF4kgQNVj1a24PzPt8xwsmSxpaTxMb+votDczvMPCfuVk+QUj/AMToCbkuk9d1y1ykQSGg+z75Ws/iRa5bRuZH+Lqwo0wwz9wu2Bowwc4X3sBMu5rWMZtdqlWb6iEhY93Z4+m4XbUJYRpBg7s+hHmmjOKzqDN5t2+sJFzXHDfa8wbhwPVpn3H4KZdriscxwg7enaxqCbaB3dM/7h6BMj6ZZRLeU/YVXm7mNpl0gEsJB6xIPuCYMFie3w7KgHtsBI5Hj71cokrNc5qESRqNSZ9ICzvEOl58Z960ra/Luxh4lwdO8DpPMeSztuDdUfLDLeazhNNWr3CU7C+icNnBu0nGbF5tzgNH/ckelVdIAB8+nNPWQPb+z3vBO8BqTr6aX6Jj2l6cseyK9BxIHeI8QbD3p82YN3Dos+fXNatTgAimZJ++q0DZjV3gu2N2xYYUIQtIEIQgWM4pySI5wqLBYQOduvExpIvGgTFnUbxHn5qqpuio2ea8mXbtOl7Swu60AcuFl8w+HDXi8mVPAsEnuzVxxjAbDfA5cYXTemO1xtNQL2hhMTOnLklujgms7rWADp802Z+0ABxMQf8AKrabASbX4c45hSzdWXhU1sNLZ52+S64aAY4H0lScWAwQefoqqviY0Nx9/JZvbUWLmP1ZZuhPE9FFy7Hmm57NAVb5RiG1Kbm8QZ8nCx+Kqs8wzZBmOa1rjcZ2rtq6QfB4ga/NJFax0uVf5li/y70j4/d1TVRBDom9zwnxTaomBoBma4UN/ST4mHyVpVEBtQH9Sy3AVS7MaLpuA644Wfp4StOfVmAPakQpn8MT1hvZHKFQZ5m7Q/cmyusNO4GzfikfOqc1Xxo1xB+i1vUZk3VhiM6p1KTqTiSToRdJOPwjmxJO6ZteQOdvNXOHDWX9V9zGnI5qW7ak09VqZq0mmQ6BaeEDgrjI89DKbKZiI1Gh5hUmUu3Whs/fL3/Feto8s3CTRtxgaHw6pq0MG0TG16DmT+WQVmuyeHa7um5Lo96s6Wa1nsdTFg5sb5sGjiT6lccubGJb2Y7u82LRoBJHSQVZynS8zrLGMDN1oteRYz1VeKwax0WJjop+f5h2mgiLH6KlxBgAHkFnXK7XuUZfu0m1JkucNOX3CeNlxZ3kkHZbEEh9PgIcOh0Prb0Wg7Mt7rj4Lth055drtCELaBCEIFrPn/vo/hVThKwNQA3AM+fJWW01RwqxAgtEc0tVK0GdCCvJn+1dsemgsdadVmOKxLv2syILKjXeLZBT5k2MD2COGqR9rqMYg7kukXi633GZxTnn7w6m0Bxl1xpMeiq8m3w6C4mBynl0ShWxU0uznvhwAcDJ3RciRp/cLTdnMsY2hSLmNL90EuIBdfrqtzHd2m1Ucqmo3feXTJ4Q2xiR4ApfzbJXb7g17gRyINuenVaV+zMv3G31sL+K5Py6idabT5BW4bSZaZ/s6wNc5pqOBLbyRYtk8uRlS8ywDHNB3jEc5101TLidl8M4yG7h/hgfEKFjtk98gtq2mS0gwfGDe08FPWxdys+xGXNNSO0JkiTDbAx01sfJVGaU2l9qhDDvACRNpbJ6SFoT9h6lyeyd/U4W691fKGxcCH4djhxu06fzLPrd9LuM4yLBNZjWSN2GuHOSBciREX+KZ61JxlzakEG2kR6Jswuw2DDRvYYB4nvNlpubeyRwS5/4OdTqCKVUsBO9d7gWidBJmbWUzxMaaMhxT3Mu5pt5qh2poVKdXebcPFxPv8Vd5flm7EUagPE3b6yRfqveY7OPq3IdbRu8IItMkGZ9r0Csxui3ks5fhXPb7F7z15Rdecfg60tim4g923DxTDl+zGJY4d5oZ+kucT7hHvV8MoP/AFL84mPgteu03plhL2kbzXCOEHqbk8Vf5W44ig13eLmy02I0NvcmTE7Jb4/57h/SPquuU7NGhvAVt4OgxuRB4/m4pMbC2UjYrKHsMtEA6gtHPWJM+CXW5uaWNBe6RN7eE/FPu2mHrUi3cc0tcDci4IjrpcehWa5hQLKv7+iS83Doc1s9ZsOeql4pOjZmdNgd2jTZ15+arsVBG9a4t9V7rOphrS54e6AQCRut00b9bqs/bWyW74c52t+PABY20tMiqBrwPzOcB5QStU2cb+7J6pAblPZ1afSSTzMRbncrRskpxRb1uu+PTnU9CELSBCEIFHbvZati9yph65pVGAiJIa5pvw0IPxSVh9ls2pVWdqBVpT3o3XGOek2WxoUuMqy6ZdiMPiGkhrKjb3gPaI4aKN+zVge+17m8nBxHvWtIWPxr7Msy7KatZ3dpEMaQJ3d0fY5rUKVMNaGjQAD0XtC3JpLQhCFUCEIQCEIQCEIQCEIQCEIQCEIQVG02XdtRP6m3HW2iUcZhsS9zXNpVILb90iHDhcLRULFw3drKxvG5BiXW/Zqp/oJv4ryzZHMKtCpTp0TTL+7vVCG7rZBJA1mAQOW9K2ZCTBfZnexv4d1MM578RiXVXuDQNTAEk6k8T7loNKmGgNGgEL2hbZCEIQf/2Q=="
+            alt="jacket"
+          />
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="right">
+
+          <!-- SIZE -->
+
+          <div class="size-box">
+
+            <h3>SIZE</h3>
+
+            <div class="sizes">
+              <button>S</button>
+              <button class="active">M</button>
+              <button>L</button>
+              <button>XL</button>
+            </div>
+
+            <a href="#">SIZE GUIDE</a>
+
+          </div>
+
+          <!-- COLOR -->
+
+          <div class="color-box">
+
+            <h3>COLOR</h3>
+
+            <div class="colors">
+
+              <div class="color-card active">
+                <img
+                  src="https://images.unsplash.com/photo-1548883354-94bcfe321cbb?q=80&w=500&auto=format&fit=crop"
+                />
+                <span>BEIGE</span>
+              </div>
+
+              <div class="color-card">
+                <img
+                  src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=500&auto=format&fit=crop"
+                />
+                <span>RED</span>
+              </div>
+
+              <div class="color-card">
+                <img
+                  src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=500&auto=format&fit=crop"
+                />
+                <span>BLACK</span>
+              </div>
+
+              <div class="color-card">
+                <img
+                  src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=500&auto=format&fit=crop"
+                />
+                <span>WHITE</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- BUTTONS -->
+
+          <button class="wishlist">
+            <i class="fa-regular fa-heart"></i>
+            ADD TO WISHLIST
+          </button>
+
+          <button class="bag-btn">
+            ADD TO BAG
+            <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+
+        </div>
+
+      </section>
+
+      <!-- FEATURES -->
+
+      <section class="features">
+
+        <div class="feature-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1548883354-94bcfe321cbb?q=80&w=500&auto=format&fit=crop"
+          />
+
+          <div class="feature-text">
+            <h3>3X WATER-REPELLENT</h3>
+            <p>
+              The fabric repels rain and snow while keeping you dry.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="feature-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=500&auto=format&fit=crop"
+          />
+
+          <div class="feature-text">
+            <h3>3D AREAS PUFFERED</h3>
+            <p>
+              Strategically padded zones trap heat efficiently.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="feature-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=500&auto=format&fit=crop"
+          />
+
+          <div class="feature-text">
+            <h3>INSULATION</h3>
+            <p>
+              Advanced thermal filling locks in warmth.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="feature-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=500&auto=format&fit=crop"
+          />
+
+          <div class="feature-text">
+            <h3>UTILITY POCKETS</h3>
+            <p>
+              Multi-functional secure storage on the go.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- BOTTOM BAR -->
+
+      <section class="bottom-bar">
+
+        <div class="info-box">
+          <i class="fa-regular fa-snowflake"></i>
+
+          <div>
+            <h4>PREMIUM FABRICS</h4>
+            <p>Durable, high-performance materials.</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <i class="fa-solid fa-shield"></i>
+
+          <div>
+            <h4>THERMAL PROTECTION</h4>
+            <p>Built for extreme winter climates.</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <i class="fa-regular fa-circle-dot"></i>
+
+          <div>
+            <h4>DESIGNED FOR FUNCTION</h4>
+            <p>Every detail serves a purpose.</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <i class="fa-regular fa-star"></i>
+
+          <div>
+            <h4>LIMITED EDITION</h4>
+            <p>Exclusive drops, limited quantities.</p>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </body>
+</html>
