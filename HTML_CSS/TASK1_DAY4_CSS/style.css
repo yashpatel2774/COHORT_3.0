@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#f5f3ef;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+.main{
+  position:relative;
+  width:100%;
+  min-height:1250px;
+  background:#f5f3ef;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.logo{
+  position:absolute;
+  top:35px;
+  left:60px;
+
+  font-size:52px;
+  font-family:serif;
+  font-weight:600;
+  color:#111;
+}
+
+.nav-links{
+  position:absolute;
+  top:42px;
+  left:34%;
+
+  list-style:none;
+}
+
+.nav-links li{
+  display:inline-block;
+  margin-right:42px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#222;
+  font-size:15px;
+  font-weight:500;
+  position:relative;
+}
+
+.nav-links a.active::after{
+  content:'';
+
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:-10px;
+
+  width:28px;
+  height:3px;
+
+  border-radius:20px;
+  background:#7c8466;
+}
+
+/* CART */
+
+.cart{
+  position:absolute;
+  top:38px;
+  right:120px;
+
+  font-size:28px;
+}
+
+.cart span{
+  position:absolute;
+  top:-7px;
+  right:-8px;
+
+  width:18px;
+  height:18px;
+
+  border-radius:50%;
+  background:#7c8466;
+
+  color:#fff;
+  font-size:10px;
+
+  text-align:center;
+  line-height:18px;
+}
+
+/* MENU */
+
+.menu{
+  position:absolute;
+  top:38px;
+  right:55px;
+
+  font-size:30px;
+}
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.collection{
+  position:absolute;
+  top:160px;
+  left:60px;
+
+  color:#7c8466;
+  letter-spacing:4px;
+  font-size:13px;
+}
+
+.collection i{
+  margin-right:10px;
+  font-size:22px;
+}
+
+/* HEADING */
+
+h1{
+  position:absolute;
+  top:230px;
+  left:60px;
+
+  width:390px;
+
+  font-size:92px;
+  line-height:0.9;
+
+  font-family:serif;
+  font-weight:500;
+}
+
+/* LINE */
+
+.line{
+  position:absolute;
+  top:480px;
+  left:60px;
+
+  width:65px;
+  height:3px;
+
+  background:#7c8466;
+}
+
+/* DESCRIPTION */
+
+.desc{
+  position:absolute;
+  top:525px;
+  left:60px;
+
+  width:350px;
+
+  font-size:15px;
+  line-height:1.8;
+
+  color:#555;
+}
+
+/* =========================
+   COLORS
+========================= */
+
+.color-title{
+  position:absolute;
+  top:645px;
+  left:60px;
+
+  font-size:18px;
+  font-weight:600;
+}
+
+.colors{
+  position:absolute;
+  top:690px;
+  left:60px;
+}
+
+.colors span{
+  display:inline-block;
+
+  width:30px;
+  height:30px;
+
+  border-radius:50%;
+  margin-right:15px;
+}
+
+.green{
+  background:#7c8466;
+}
+
+.white{
+  background:#e9dfd3;
+}
+
+.pink{
+  background:#d9a0a2;
+}
+
+/* =========================
+   DETAILS
+========================= */
+
+.details{
+  position:absolute;
+  top:760px;
+  left:60px;
+
+  font-size:18px;
+  font-weight:600;
+}
+
+.small-line{
+  position:absolute;
+  top:12px;
+  left:90px;
+
+  width:30px;
+  height:2px;
+
+  background:#aaa;
+}
+
+.details-text{
+  position:absolute;
+  top:810px;
+  left:60px;
+
+  width:360px;
+
+  font-size:14px;
+  line-height:1.8;
+  color:#666;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.feature{
+  position:absolute;
+  top:1030px;
+
+  width:110px;
+
+  text-align:center;
+}
+
+.f1{
+  left:60px;
+}
+
+.f2{
+  left:200px;
+}
+
+.f3{
+  left:340px;
+}
+
+.icon-circle{
+  position:relative;
+
+  width:58px;
+  height:58px;
+
+  border-radius:50%;
+  background:#ece9e2;
+
+  margin:auto;
+  margin-bottom:12px;
+}
+
+.icon-circle i{
+  position:absolute;
+  top:18px;
+  left:18px;
+
+  font-size:22px;
+  color:#7c8466;
+}
+
+.feature h4{
+  font-size:14px;
+  line-height:1.5;
+  font-weight:500;
+}
+
+/* =========================
+   MAIN IMAGE
+========================= */
+
+.main-image{
+  position:absolute;
+  top:170px;
+  right:220px;
+
+  width:560px;
+  height:600px;
+
+  object-fit:cover;
+  border-radius:26px;
+}
+
+/* PRICE */
+
+.price{
+  position:absolute;
+  top:200px;
+  right:690px;
+
+  background:#fff;
+
+  padding:12px 24px;
+
+  border-radius:40px;
+
+  font-size:22px;
+  font-weight:600;
+
+  box-shadow:0 5px 10px rgba(0,0,0,0.05);
+}
+
+/* RATING */
+
+.rating{
+  position:absolute;
+  top:200px;
+  right:250px;
+
+  background:#fff;
+
+  padding:12px 24px;
+
+  border-radius:40px;
+
+  font-size:15px;
+
+  box-shadow:0 5px 10px rgba(0,0,0,0.05);
+}
+
+/* VERTICAL TEXT */
+
+.vertical-text{
+  position:absolute;
+  top:360px;
+  right:815px;
+
+  writing-mode:vertical-rl;
+  transform:rotate(180deg);
+
+  font-size:20px;
+  color:#333;
+}
+
+/* BUTTON */
+
+.bag-btn{
+  position:absolute;
+  top:600px;
+  right:190px;
+
+  width:120px;
+  height:120px;
+
+  border:none;
+  border-radius:50%;
+
+  background:#7c8466;
+  color:#fff;
+
+  font-size:16px;
+  cursor:pointer;
+}
+
+.bag-btn i{
+  display:block;
+
+  margin-bottom:10px;
+  font-size:25px;
+}
+
+/* =========================
+   SIDE IMAGES
+========================= */
+
+.side-images{
+  position:absolute;
+  top:190px;
+  right:65px;
+}
+
+.side-images img{
+  display:block;
+
+  width:95px;
+  height:95px;
+
+  object-fit:cover;
+
+  border-radius:18px;
+
+  margin-bottom:18px;
+}
+
+/* =========================
+   BOTTOM CARD
+========================= */
+
+.bottom-card{
+  position:absolute;
+  top:920px;
+  left:57%;
+
+  transform:translateX(-50%);
+
+  width:720px;
+  height:100px;
+
+  background:#f8f5ef;
+
+  border-radius:26px;
+
+  box-shadow:0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* CARD */
+
+.card{
+  position:absolute;
+  top:34px;
+}
+
+.card i{
+  position:absolute;
+  top:0;
+  left:0;
+
+  font-size:30px;
+  color:#7c8466;
+}
+
+.card h4{
+  position:absolute;
+  top:2px;
+  left:45px;
+
+  width:170px;
+
+  font-size:15px;
+  font-weight:500;
+}
+
+/* POSITIONS */
+
+.c1{
+  left:45px;
+}
+
+.c2{
+  left:270px;
+}
+
+.c3{
+  left:520px;
+}
+
+/* DIVIDERS */
+
+.divider{
+  position:absolute;
+  top:22px;
+
+  width:1px;
+  height:55px;
+
+  background:#ddd;
+}
+
+.d1{
+  left:225px;
+}
+
+.d2{
+  left:485px;
+}
