@@ -1,0 +1,305 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #221a29;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* HERO */
+
+.hero {
+  width: 100%;
+  height: 640px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop");
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+
+  padding: 16px 45px;
+
+  position: relative;
+
+  z-index: 20;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+
+.logo {
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  color: white;
+}
+
+/* MENU */
+
+.menu {
+  display: flex;
+  gap: 26px;
+
+  list-style: none;
+}
+
+.menu li {
+  font-size: 12px;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.menu li:hover {
+  color: #e4c56d;
+}
+
+/* SOCIALS */
+
+.socials {
+  display: flex;
+  gap: 10px;
+}
+
+.socials i {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.16);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.socials i:hover {
+  background: #e4c56d;
+  color: black;
+}
+
+/* CONTENT */
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 135px;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10;
+}
+
+/* SMALL TEXT */
+
+.content p {
+  font-size: 17px;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+}
+
+/* MAIN TITLE */
+
+.content h1 {
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 95px;
+  letter-spacing: 4px;
+  color: rgba(255, 255, 255, 0.72);
+  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.55);
+}
+
+/* SUBTITLE */
+
+.content h2 {
+  font-size: 26px;
+  margin-top: -2px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.96);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+}
+
+/* BUTTON */
+
+button {
+  width: 220px;
+  height: 54px;
+  margin-top: 28px;
+  border: none;
+  background: #e5c86e;
+  color: #111;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  z-index: 50;
+  clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.35);
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+/* CHARACTER */
+
+
+.character{
+  position:absolute;
+  left:50%;
+  bottom:20px;
+  transform:translateX(-50%);
+  z-index:8;
+  width:300px;
+  display:flex;
+  justify-content:center;
+  pointer-events:none;
+}
+
+.character img {
+  width: 100%;
+
+  object-fit: contain;
+
+  display: block;
+
+  filter: drop-shadow(0 20px 22px rgba(0, 0, 0, 0.45));
+}
+
+/* CURVE */
+
+.curve {
+  position: absolute;
+
+  left: -10%;
+  bottom: -140px;
+
+  width: 120%;
+  height: 260px;
+
+  background: #241c2c;
+
+  border-radius: 50%;
+
+  z-index: 6;
+}
+
+/* VISION SECTION */
+
+.vision-section {
+  width: 100%;
+
+  background: #241c2c;
+
+  padding: 40px 60px 65px;
+
+  position: relative;
+
+  z-index: 10;
+
+  text-align: center;
+}
+
+/* TITLE */
+
+.vision-section h1 {
+  font-size: 46px;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 24px;
+}
+
+/* LINE */
+
+.vision-line {
+  width: 72%;
+  height: 2px;
+
+  background: #d4b46d;
+
+  margin: auto;
+
+  position: relative;
+}
+
+.vision-line span {
+  width: 13px;
+  height: 13px;
+
+  border: 2px solid #d4b46d;
+
+  background: #241c2c;
+
+  position: absolute;
+
+  left: 50%;
+  top: -6px;
+
+  transform: translateX(-50%) rotate(45deg);
+}
+
+/* TEXT AREA */
+
+.vision-content {
+  margin-top: 42px;
+
+  display: flex;
+  justify-content: center;
+
+  gap: 90px;
+}
+
+/* TEXT BOX */
+
+.vision-box {
+  width: 430px;
+
+  text-align: left;
+}
+
+/* PARAGRAPH */
+
+.vision-box p {
+  color: #d2d2d2;
+
+  font-size: 15px;
+
+  line-height: 30px;
+
+  margin-bottom: 18px;
+}
