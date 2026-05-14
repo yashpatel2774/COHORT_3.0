@@ -1,0 +1,667 @@
+/* ================= GOOGLE FONTS ================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+/* ================= GLOBAL ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f5f3;
+    color:#111;
+    overflow-x:hidden;
+    font-size: 25px;
+    font-family:'Manrope',sans-serif;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:#111;
+}
+
+ul{
+    list-style:none;
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:0 24px;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    width:100%;
+    padding:28px 0;
+    border-bottom:1px solid #ddd;
+    position:sticky;
+    top:0;
+    background:#f5f5f3;
+    z-index:1000;
+}
+
+.nav-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo h2{
+    font-size:34px;
+    font-weight:500;
+    font-family:'Cormorant Garamond',serif;
+}
+
+.logo-box{
+    width:42px;
+    height:42px;
+    border:2px solid #111;
+    border-radius:50%;
+}
+
+.nav-links{
+    display:flex;
+    font-size: 50px;
+    font-weight: 800;
+    align-items:center;
+    gap:38px;
+}
+
+.nav-links a{
+    font-size:15px;
+    font-weight:500;
+}
+
+.contact-btn{
+    padding:14px 28px;
+    border:1px solid #111;
+    border-radius:50px;
+    transition:0.3s;
+}
+
+.contact-btn:hover{
+    background:#111;
+    color:white;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    padding:110px 0 100px;
+}
+
+.hero h1{
+    font-size:110px;
+    line-height:0.95;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:500;
+    max-width:980px;
+    margin-bottom:40px;
+}
+
+.hero p{
+    font-size:26px;
+    line-height:1.5;
+    max-width:720px;
+    color:#333;
+    margin-bottom:40px;
+    font-family:'Cormorant Garamond',serif;
+}
+
+.hero-btn{
+    display:inline-block;
+    background:#111;
+    color:white;
+    padding:18px 34px;
+    border-radius:50px;
+    font-size:16px;
+}
+
+/* ================= LOGOS ================= */
+.brand-logos{
+    width: 100%;
+    overflow: hidden;
+    padding: 70px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    display: flex;
+    align-items: center;
+    gap: 90px;
+
+    width: max-content;
+
+    animation: logoSlider 18s linear infinite;
+}
+
+/* LOGOS */
+
+#container img{
+    height: 42px;
+    width: auto;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+
+    opacity: 0.75;
+
+    transition: 0.3s;
+}
+
+#container img:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* CONTINUOUS FLOW */
+
+@keyframes logoSlider{
+
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-50%);
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .brand-logos{
+        padding: 50px 0;
+    }
+
+    #container{
+        gap: 55px;
+    }
+
+    #container img{
+        height: 28px;
+    }
+
+}
+
+/* ================= SERVICES ================= */
+
+.services{
+    padding:70px 0 120px;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+}
+
+.service-card{
+    background:#ececeb;
+    padding:48px 36px;
+    min-height:340px;
+}
+
+.service-card h3{
+    font-size:42px;
+    line-height:1.1;
+    margin-bottom:28px;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:500;
+}
+
+.service-card p{
+    line-height:1.8;
+    color:#444;
+    margin-bottom:24px;
+    font-size:15px;
+}
+
+.service-card a{
+    font-size:15px;
+    border-bottom:1px solid #111;
+}
+
+/* ================= SECTION TITLE ================= */
+
+.section-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:50px;
+    border-top:1px solid #ddd;
+    padding-top:24px;
+}
+
+.section-head p{
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.section-head h2{
+    font-size:78px;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:500;
+    margin-top:18px;
+}
+
+.outline-btn{
+    border:1px solid #111;
+    padding:16px 34px;
+    border-radius:50px;
+}
+
+/* ================= WORK ================= */
+
+.work{
+    padding-bottom:120px;
+}
+
+.work-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
+}
+
+.work-card{
+    overflow: hidden;
+}
+
+.work-card img{
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.work-card:hover img{
+    transform: scale(1.08);
+}
+
+.work-info{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:18px;
+}
+
+.work-info h3{
+    font-size:24px;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:500;
+}
+
+.tag{
+    border:1px solid #111;
+    padding:10px 18px;
+    border-radius:50px;
+    font-size:14px;
+}
+
+/* ================= VALUES ================= */
+
+.values{
+    padding-bottom:120px;
+}
+
+.values-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.value-card{
+    background:#ececeb;
+    padding:46px;
+    min-height:320px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.value-card h3{
+    font-size:20px;
+    line-height:1.5;
+    text-transform:uppercase;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:600;
+}
+
+.value-card p{
+    font-size:50px;
+    line-height:1.1;
+    font-family:'Cormorant Garamond',serif;
+}
+
+.dark-btn{
+    background:#111;
+    color:white;
+    width:fit-content;
+    padding:16px 34px;
+    border-radius:50px;
+}
+
+/* ================= ABOUT TEXT ================= */
+
+.about-text{
+    padding:50px 0 130px;
+}
+
+.about-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.about-content h2{
+    font-size:78px;
+    line-height:1.1;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:500;
+    margin-bottom:50px;
+}
+
+.about-columns{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.about-columns p{
+    line-height:2;
+    font-size:17px;
+    color:#444;
+}
+
+/* ================= TEAM ================= */
+
+.team{
+    padding-bottom:120px;
+}
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+}
+
+.team-card{
+    background:#ececeb;
+    overflow:hidden;
+}
+
+.team-card img{
+    height:360px;
+    object-fit:cover;
+}
+
+.team-content{
+    padding:20px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.team-content h3{
+    font-size:20px;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:500;
+}
+
+/* ================= TESTIMONIAL ================= */
+
+.testimonials{
+    padding-bottom:120px;
+}
+
+.testimonial-box{
+    display:grid;
+    grid-template-columns:250px 1fr;
+    gap:60px;
+    padding:60px 0;
+    border-top:1px solid #ddd;
+}
+
+.testimonial-box h3{
+    font-size:52px;
+    line-height:1.2;
+    margin-bottom:30px;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:500;
+}
+
+.testimonial-box p{
+    font-size:18px;
+    line-height:2;
+    color:#333;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    padding-bottom:120px;
+}
+
+.contact-box{
+    background:#ececeb;
+    padding:100px;
+}
+
+.contact-box h2{
+    font-size:88px;
+    line-height:1.1;
+    max-width:760px;
+    margin-bottom:40px;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:500;
+}
+
+.contact-box p{
+    font-size:28px;
+    line-height:1.6;
+    max-width:700px;
+    margin-bottom:50px;
+    font-family:'Cormorant Garamond',serif;
+}
+
+/* ================= BLOG ================= */
+
+.blog{
+    padding-bottom:120px;
+}
+
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.blog-card img{
+    height:270px;
+    object-fit:cover;
+    margin-bottom:24px;
+}
+
+.blog-card h3{
+    font-size:30px;
+    line-height:1.3;
+    margin-bottom:20px;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:500;
+}
+
+.blog-card a{
+    border-bottom:1px solid #111;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    border-top:1px solid #ddd;
+    padding:70px 0 30px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr 1fr;
+    gap:50px;
+}
+
+.footer-logo h2{
+    font-size:42px;
+    margin-bottom:24px;
+    font-family:'Cormorant Garamond',serif;
+}
+
+.socials{
+    display:flex;
+    gap:14px;
+    margin-top:20px;
+}
+
+.socials i{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#e5e5e5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.footer-links h4{
+    margin-bottom:24px;
+    font-size:22px;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:500;
+}
+
+.footer-links a{
+    display:block;
+    margin-bottom:18px;
+    color:#333;
+}
+
+.footer-bottom{
+    border-top:1px solid #ddd;
+    margin-top:70px;
+    padding-top:24px;
+    display:flex;
+    justify-content:space-between;
+    color:#666;
+    font-size:14px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1100px){
+
+    .hero h1{
+        font-size:80px;
+    }
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .team-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .blog-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:56px;
+    }
+
+    .hero p{
+        font-size:20px;
+    }
+
+    .logo-grid,
+    .service-grid,
+    .work-grid,
+    .values-grid,
+    .team-grid,
+    .blog-grid,
+    .footer-grid,
+    .about-columns{
+        grid-template-columns:1fr;
+    }
+
+    .section-head{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
+
+    .section-head h2{
+        font-size:52px;
+    }
+
+    .about-content h2{
+        font-size:54px;
+    }
+
+    .contact-box{
+        padding:50px 30px;
+    }
+
+    .contact-box h2{
+        font-size:56px;
+    }
+
+    .contact-box p{
+        font-size:22px;
+    }
+
+    .testimonial-box{
+        grid-template-columns:1fr;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        gap:15px;
+    }
+    
+
+}
