@@ -9,170 +9,96 @@ let id = 1;
 
 addBtn.addEventListener("click", () => {
 
-    if (taskInput.value.trim() === "") {
-        alert("Please enter a task");
-        return;
-    }
+```
+if(taskInput.value.trim() === ""){
+    alert("Please enter a task");
+    return;
+}
 
-    let task = document.createElement("div");
-    task.classList.add("task");
+let task = document.createElement("div");
+task.classList.add("task");
 
-    // Custom Data Attributes
-    task.setAttribute("data-id", id++);
-    task.setAttribute("data-status", "pending");
-    task.setAttribute("data-category", category.value);
+// Custom Data Attributes
 
-    let title = document.createElement("h3");
-    let text = document.createTextNode(taskInput.value);
-    title.append(text);
+task.setAttribute("data-id", id++);
+task.setAttribute("data-status", "pending");
+task.setAttribute("data-category", category.value);
 
-    let cat = document.createElement("p");
-    cat.innerText = "Category : " + category.value;
+let title = document.createElement("h3");
+title.innerText = taskInput.value;
 
-    let editBtn = document.createElement("button");
-    editBtn.innerText = "Edit";
-    editBtn.classList.add("edit");
+let cat = document.createElement("p");
+cat.innerText = "Category : " + category.value;
 
-    let completeBtn = document.createElement("button");
-    completeBtn.innerText = "Complete";
-    completeBtn.classList.add("complete");
+let editBtn = document.createElement("button");
+editBtn.innerText = "Edit";
+editBtn.classList.add("edit");
 
-    let deleteBtn = document.createElement("button");
-    deleteBtn.innerText = "Delete";
-    deleteBtn.classList.add("delete");
+let completeBtn = document.createElement("button");
+completeBtn.innerText = "Complete";
+completeBtn.classList.add("complete");
 
-    task.append(title);
-    task.append(cat);
-    task.append(editBtn);
-    task.append(completeBtn);
-    task.append(deleteBtn);
+let deleteBtn = document.createElement("button");
+deleteBtn.innerText = "Delete";
+deleteBtn.classList.add("delete");
 
-    taskContainer.append(task);
+task.append(title);
+task.append(cat);
+task.append(editBtn);
+task.append(completeBtn);
+task.append(deleteBtn);
 
-    taskInput.value = "";
+taskContainer.append(task);
+
+taskInput.value = "";
+```
+
 });
 
-
 // Event Delegation
+// Only One Event Listener
 
 taskContainer.addEventListener("click", (e) => {
 
-    let task = e.target.closest(".task");
+```
+let task = e.target.closest(".task");
 
-    if (!task) return;
+if(!task) return;
 
-    // Delete Task
-    if (e.target.classList.contains("delete")) {
-        task.remove();
+// Delete Task
+
+if(e.target.classList.contains("delete")){
+    task.remove();
+}
+
+// Complete Task
+
+if(e.target.classList.contains("complete")){
+
+    task.classList.toggle("completed");
+
+    if(task.classList.contains("completed")){
+        task.setAttribute("data-status","completed");
     }
-
-    // Complete Task
-    if (e.target.classList.contains("complete")) {
-
-        task.classList.toggle("completed");
-
-        if (task.classList.contains("completed")) {
-            task.setAttribute("data-status", "completed");
-        } else {
-            task.setAttribute("data-status", "pending");
-        }
-
-        console.log(task.getAttribute("data-status"));
+    else{
+        task.setAttribute("data-status","pending");
     }
+}
 
-    // Edit Task
-    if (e.target.classList.contains("edit")) {
+// Edit Task
 
-        let currentTask =
-            task.querySelector("h3").innerText;
+if(e.target.classList.contains("edit")){
 
-        let newTask =
-            prompt("Edit Task", currentTask);
+    let currentTask =
+    task.querySelector("h3").innerText;
 
-        if (newTask) {
-            task.querySelector("h3").innerText = newTask;
-        }
+    let newTask =
+    prompt("Edit Task", currentTask);
+
+    if(newTask){
+        task.querySelector("h3").innerText = newTask;
     }
+}
+```
+
 });
-
-
-// Attributes vs Properties
-
-document
-    .getElementById("showDiff")
-    .addEventListener("click", () => {
-
-        let input =
-            document.getElementById("demoInput");
-
-        document
-            .getElementById("result")
-            .innerHTML =
-            "Property Value : " + input.value +
-            "<br>" +
-            "Attribute Value : " +
-            input.getAttribute("value");
-    });
-
-
-// hasAttribute Example
-
-console.log(
-    document
-        .getElementById("demoInput")
-        .hasAttribute("value")
-);
-
-
-// Event Bubbling
-
-document
-    .getElementById("grandparent")
-    .addEventListener("click", () => {
-        console.log("Grandparent");
-    });
-
-document
-    .getElementById("parent")
-    .addEventListener("click", () => {
-        console.log("Parent");
-    });
-
-document
-    .getElementById("child")
-    .addEventListener("click", () => {
-        console.log("Child");
-    });
-
-
-// Event Capturing
-
-document
-    .getElementById("grandparent")
-    .addEventListener(
-        "click",
-        () => {
-            console.log("Grandparent Capture");
-        },
-        true
-    );
-
-document
-    .getElementById("parent")
-    .addEventListener(
-        "click",
-        () => {
-            console.log("Parent Capture");
-        },
-        true
-    );
-
-document
-    .getElementById("child")
-    .addEventListener(
-        "click",
-        () => {
-            console.log("Child Capture");
-        },
-        true
-    );
