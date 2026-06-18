@@ -19,19 +19,9 @@
         >
 
         <select id="category">
-
-            <option value="Study">
-                Study
-            </option>
-
-            <option value="Work">
-                Work
-            </option>
-
-            <option value="Personal">
-                Personal
-            </option>
-
+            <option value="Study">Study</option>
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
         </select>
 
         <button id="addBtn">
@@ -50,65 +40,25 @@
 
     <hr>
 
-    <h2>Attributes vs Properties</h2>
-
-    <input
-        type="text"
-        id="demoInput"
-        value="Hello"
-    >
-
-    <button id="showDiff">
-        Show Difference
-    </button>
-
-    <p id="result">
-
-    </p>
-
-    <hr>
-
-    <h2>Event Propagation</h2>
-
-    <div id="grandparent" class="box">
-
-        Grandparent
-
-        <div id="parent" class="box">
-
-            Parent
-
-            <button id="child">
-                Child
-            </button>
-
-        </div>
-
-    </div>
-
-    <hr>
-
     <h2>Browser Rendering Pipeline</h2>
 
     <ol>
-
         <li>HTML Parsing</li>
-
         <li>DOM Tree Creation</li>
-
         <li>CSS Parsing</li>
-
         <li>CSSOM Tree Creation</li>
-
         <li>Render Tree</li>
-
         <li>Layout</li>
-
         <li>Paint</li>
-
         <li>Composite</li>
-
     </ol>
+
+    <p>
+        Browser first parses HTML and creates the DOM Tree.
+        CSS is parsed into CSSOM Tree.
+        DOM and CSSOM combine to form the Render Tree.
+        Then Layout, Paint and Composite processes are performed to display the webpage.
+    </p>
 
     <script src="script.js"></script>
 
