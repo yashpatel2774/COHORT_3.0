@@ -1,0 +1,696 @@
+/* ==========================================
+        DASHBOARD
+========================================== */
+
+#dashboardPage{
+    animation:fadeIn .35s ease;
+}
+
+/* ==========================================
+        SUMMARY CARDS
+========================================== */
+
+.cards{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-bottom:35px;
+
+}
+
+.cards .card{
+
+    position:relative;
+    overflow:hidden;
+
+    padding:28px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    min-height:150px;
+
+}
+
+.cards .card::before{
+
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:5px;
+    height:100%;
+
+}
+
+.cards .balance::before{
+
+    background:#3b82f6;
+
+}
+
+.cards .income::before{
+
+    background:#22c55e;
+
+}
+
+.cards .expense::before{
+
+    background:#ef4444;
+
+}
+
+.cards .transaction::before{
+
+    background:#f59e0b;
+
+}
+
+.cards span{
+
+    display:block;
+    color:#94a3b8;
+    margin-bottom:12px;
+    font-size:14px;
+
+}
+
+.cards h2{
+
+    font-size:32px;
+    font-weight:700;
+
+}
+
+.cards i{
+
+    width:65px;
+    height:65px;
+
+    border-radius:18px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:26px;
+
+}
+
+.balance i{
+
+    color:#3b82f6;
+    background:rgba(59,130,246,.15);
+
+}
+
+.income i{
+
+    color:#22c55e;
+    background:rgba(34,197,94,.15);
+
+}
+
+.expense i{
+
+    color:#ef4444;
+    background:rgba(239,68,68,.15);
+
+}
+
+.transaction i{
+
+    color:#f59e0b;
+    background:rgba(245,158,11,.15);
+
+}
+
+.cards .card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 18px 45px rgba(0,0,0,.45);
+
+}
+
+/* ==========================================
+        MIDDLE GRID
+========================================== */
+
+.middle{
+
+    display:grid;
+
+    grid-template-columns:2.2fr 1fr;
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================================
+        CHART CARD
+========================================== */
+
+.chartCard{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.sectionTitle{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.sectionTitle h2{
+
+    font-size:22px;
+
+}
+
+.chartCard canvas{
+
+    width:100% !important;
+
+    height:350px !important;
+
+}
+
+/* ==========================================
+        PREFERENCE CARD
+========================================== */
+
+.preferenceCard{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.preferenceCard h2{
+
+    margin-bottom:25px;
+
+}
+
+.preference{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.preference label{
+
+    margin:0;
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+        SWITCH
+========================================== */
+
+#darkToggle{
+
+    width:55px;
+
+    height:28px;
+
+    cursor:pointer;
+
+}
+
+/* ==========================================
+        RESET BUTTON
+========================================== */
+
+#resetBtn{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#dc2626;
+
+    color:white;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#resetBtn:hover{
+
+    background:#b91c1c;
+
+}
+
+/* ==========================================
+        TRANSACTION SECTION
+========================================== */
+
+.tableSection{
+
+    background:var(--card);
+
+    border-radius:18px;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+    padding:25px;
+
+}
+
+.tableHeader{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.tableHeader h2{
+
+    font-size:24px;
+
+}
+/* ==========================================
+        SEARCH & FILTER
+========================================== */
+
+.tableActions{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.tableActions input{
+    width:260px;
+    height:45px;
+    padding:0 18px;
+    background:#0f172a;
+    border:1px solid var(--border);
+    border-radius:12px;
+    color:#fff;
+    transition:.3s;
+}
+
+.tableActions input:focus{
+    border-color:var(--primary);
+    box-shadow:0 0 0 3px rgba(37,99,235,.2);
+}
+
+.tableActions select{
+    width:170px;
+    height:45px;
+    background:#0f172a;
+    border:1px solid var(--border);
+    border-radius:12px;
+    color:#fff;
+    cursor:pointer;
+}
+
+/* ==========================================
+        TABLE
+========================================== */
+
+.tableSection table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.tableSection thead{
+    background:#162033;
+}
+
+.tableSection thead th{
+
+    padding:18px;
+    text-align:left;
+    color:#94a3b8;
+    font-size:14px;
+    font-weight:600;
+
+}
+
+.tableSection tbody td{
+
+    padding:18px;
+    border-bottom:1px solid var(--border);
+
+}
+
+.tableSection tbody tr{
+
+    transition:.25s;
+
+}
+
+.tableSection tbody tr:hover{
+
+    background:#172033;
+
+}
+
+.tableSection tbody tr:last-child td{
+
+    border-bottom:none;
+
+}
+
+/* ==========================================
+        CATEGORY TAG
+========================================== */
+
+.category{
+
+    display:inline-block;
+
+    padding:7px 14px;
+
+    border-radius:20px;
+
+    background:#263246;
+
+    color:#dbeafe;
+
+    font-size:13px;
+
+}
+
+/* ==========================================
+        AMOUNT
+========================================== */
+
+.incomeAmount{
+
+    color:#22c55e;
+
+    font-weight:700;
+
+}
+
+.expenseAmount{
+
+    color:#ef4444;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+        DELETE
+========================================== */
+
+.actionBtn{
+
+    width:38px;
+    height:38px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border:none;
+    outline:none;
+
+    background:#dc2626;
+
+    color:#fff;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.actionBtn:hover{
+
+    background:#b91c1c;
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+        EMPTY TABLE
+========================================== */
+
+.noData{
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    color:#94a3b8;
+
+}
+
+.noData i{
+
+    font-size:60px;
+
+    margin-bottom:15px;
+
+    color:#475569;
+
+}
+
+.noData h3{
+
+    margin-bottom:10px;
+
+    font-size:24px;
+
+}
+
+.noData p{
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+        CARD ANIMATION
+========================================== */
+
+.cards .card{
+
+    transition:.35s ease;
+
+}
+
+.cards .card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+}
+
+/* ==========================================
+        CHART ANIMATION
+========================================== */
+
+.chartCard{
+
+    transition:.3s;
+
+}
+
+.chartCard:hover{
+
+    border-color:var(--primary);
+
+}
+
+/* ==========================================
+        PREFERENCE CARD
+========================================== */
+
+.preferenceCard{
+
+    transition:.3s;
+
+}
+
+.preferenceCard:hover{
+
+    border-color:var(--primary);
+
+}
+
+/* ==========================================
+        SETTINGS CARD
+========================================== */
+
+.settingsCard{
+
+    width:700px;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.settingsCard h2{
+
+    margin-bottom:25px;
+
+}
+
+.settingsCard button{
+
+    margin-top:25px;
+
+    width:100%;
+
+}
+
+/* ==========================================
+        PAGE ANIMATION
+========================================== */
+
+#dashboardPage,
+#settingsPage{
+
+    animation:fadeIn .35s ease;
+
+}
+
+/* ==========================================
+        RESPONSIVE (TABLET)
+========================================== */
+
+@media(max-width:1200px){
+
+.cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.middle{
+
+grid-template-columns:1fr;
+
+}
+
+.settingsCard{
+
+width:100%;
+
+}
+
+}
+
+/* ==========================================
+        RESPONSIVE (MOBILE)
+========================================== */
+
+@media(max-width:768px){
+
+.tableHeader{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:15px;
+
+}
+
+.tableActions{
+
+width:100%;
+
+flex-direction:column;
+
+}
+
+.tableActions input,
+.tableActions select{
+
+width:100%;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.tableSection{
+
+overflow-x:auto;
+
+}
+
+.tableSection table{
+
+min-width:700px;
+
+}
+
+.chartCard canvas{
+
+height:260px !important;
+
+}
+
+}

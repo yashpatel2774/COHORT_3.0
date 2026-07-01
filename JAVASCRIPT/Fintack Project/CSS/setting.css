@@ -1,0 +1,324 @@
+/* ==========================================
+        SETTINGS PAGE
+========================================== */
+
+#settingsPage{
+
+    width:100%;
+
+    animation:fadeIn .35s ease;
+
+}
+
+/* ==========================================
+        SETTINGS WRAPPER
+========================================== */
+
+.settingsWrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    margin-top:20px;
+
+}
+
+/* ==========================================
+        SETTINGS CARD
+========================================== */
+
+.settingsCard{
+
+    width:720px;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:35px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s ease;
+
+}
+
+.settingsCard:hover{
+
+    border-color:var(--primary);
+
+}
+
+.settingsCard h2{
+
+    font-size:28px;
+
+    margin-bottom:30px;
+
+}
+
+.settingsCard p{
+
+    color:var(--textLight);
+
+    margin-bottom:25px;
+
+}
+
+/* ==========================================
+        FORM GROUP
+========================================== */
+
+.formGroup{
+
+    margin-bottom:22px;
+
+}
+
+.formGroup label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    color:#e2e8f0;
+
+}
+
+.formGroup input{
+
+    width:100%;
+
+    height:52px;
+
+    padding:0 18px;
+
+    background:#0f172a;
+
+    color:white;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.formGroup select{
+
+    width:100%;
+
+    height:52px;
+
+    padding:0 18px;
+
+    background:#0f172a;
+
+    color:white;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.formGroup input:focus,
+.formGroup select:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.18);
+
+}
+
+/* ==========================================
+        PROFILE SECTION
+========================================== */
+
+.profileBox{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-bottom:35px;
+
+}
+
+.profileIcon{
+
+    width:75px;
+
+    height:75px;
+
+    border-radius:50%;
+
+    background:rgba(37,99,235,.18);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    color:#3b82f6;
+
+}
+
+.profileInfo h3{
+
+    font-size:22px;
+
+    margin-bottom:6px;
+
+}
+
+.profileInfo span{
+
+    color:var(--textLight);
+
+}
+
+/* ==========================================
+        SAVE BUTTON
+========================================== */
+
+#saveProfile{
+
+    width:100%;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-top:10px;
+
+}
+
+#saveProfile:hover{
+
+    background:var(--primaryHover);
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================================
+        SUCCESS MESSAGE
+========================================== */
+
+.successMessage{
+
+    margin-top:18px;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    background:rgba(34,197,94,.15);
+
+    color:#22c55e;
+
+    border:1px solid rgba(34,197,94,.35);
+
+}
+
+/* ==========================================
+        RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.settingsCard{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.settingsCard{
+
+padding:25px;
+
+}
+
+.profileBox{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.profileIcon{
+
+width:65px;
+height:65px;
+
+font-size:25px;
+
+}
+
+.settingsCard h2{
+
+font-size:24px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.formGroup input,
+.formGroup select{
+
+height:48px;
+
+}
+
+#saveProfile{
+
+height:48px;
+
+font-size:15px;
+
+}
+
+}

@@ -1,0 +1,376 @@
+/* ==========================================
+        MODAL OVERLAY
+========================================== */
+
+.modal{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100vh;
+
+    background:rgba(0,0,0,.65);
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    visibility:hidden;
+    opacity:0;
+
+    transition:.35s ease;
+
+    z-index:9999;
+
+}
+
+.modal.show{
+
+    visibility:visible;
+    opacity:1;
+
+}
+
+/* ==========================================
+        MODAL BOX
+========================================== */
+
+.modalContent{
+
+    width:520px;
+
+    background:#1e293b;
+
+    border:1px solid #334155;
+
+    border-radius:18px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.45);
+
+    overflow:hidden;
+
+    transform:scale(.9);
+
+    transition:.35s;
+
+}
+
+.modal.show .modalContent{
+
+    transform:scale(1);
+
+}
+
+/* ==========================================
+        HEADER
+========================================== */
+
+.modalHeader{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 25px;
+
+    border-bottom:1px solid #334155;
+
+}
+
+.modalHeader h2{
+
+    font-size:24px;
+
+    font-weight:600;
+
+}
+
+#closeModal{
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#374151;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#closeModal:hover{
+
+    background:#ef4444;
+
+}
+
+/* ==========================================
+        BODY
+========================================== */
+
+.modalBody{
+
+    padding:25px;
+
+}
+
+.modalBody label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    margin-top:18px;
+
+    color:#cbd5e1;
+
+    font-size:14px;
+
+}
+
+.modalBody input,
+.modalBody select{
+
+    width:100%;
+
+    height:48px;
+
+    padding:0 16px;
+
+    background:#0f172a;
+
+    border:1px solid #334155;
+
+    color:white;
+
+    border-radius:12px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.modalBody textarea{
+
+    width:100%;
+
+    min-height:100px;
+
+    resize:none;
+
+    padding:15px;
+
+    background:#0f172a;
+
+    color:white;
+
+    border:1px solid #334155;
+
+    border-radius:12px;
+
+    outline:none;
+
+}
+
+.modalBody input:focus,
+.modalBody select:focus,
+.modalBody textarea:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.2);
+
+}
+
+/* ==========================================
+        TWO COLUMN
+========================================== */
+
+.formRow{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+}
+
+/* ==========================================
+        BUTTONS
+========================================== */
+
+.modalButtons{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+#saveTransaction{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:13px 24px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+#saveTransaction:hover{
+
+    background:#1d4ed8;
+
+}
+
+#cancelTransaction{
+
+    background:#374151;
+
+    color:white;
+
+    border:none;
+
+    padding:13px 24px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+#cancelTransaction:hover{
+
+    background:#4b5563;
+
+}
+
+/* ==========================================
+        ERROR
+========================================== */
+
+.inputError{
+
+    border:1px solid #ef4444 !important;
+
+}
+
+.errorText{
+
+    color:#ef4444;
+
+    font-size:13px;
+
+    margin-top:6px;
+
+}
+
+/* ==========================================
+        SUCCESS
+========================================== */
+
+.successText{
+
+    color:#22c55e;
+
+    font-size:13px;
+
+    margin-top:6px;
+
+}
+
+/* ==========================================
+        RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.modal{
+
+padding:20px;
+
+}
+
+.modalContent{
+
+width:100%;
+
+}
+
+.formRow{
+
+grid-template-columns:1fr;
+
+}
+
+.modalButtons{
+
+flex-direction:column;
+
+}
+
+#saveTransaction,
+#cancelTransaction{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.modalHeader{
+
+padding:18px;
+
+}
+
+.modalBody{
+
+padding:18px;
+
+}
+
+.modalHeader h2{
+
+font-size:20px;
+
+}
+
+}
